@@ -1,0 +1,184 @@
+.css1{
+    background-image: url("https://images.unsplash.com/photo-1769103483646-d00e91b4b674?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D");
+    width: 50%;
+    height: 1000px;
+    border: 2px solid red;
+    background-repeat: no-repeat;
+}
+#a{
+    width: 50px;
+    height: 500px;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* left: 0; */
+}
+#s{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    background-color: brown;
+    position: sticky;
+    top: 0;
+}
+.img{
+  
+    object-fit:contain;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+article.project{
+
+    width: fit-content;
+    margin-top:20px;
+    /* margin-bottom:20px; */
+    border:  2px dotted #000;
+    padding:10px;
+}
+.projectHeading{
+    font-size: 24px;
+    font-weight: bold;
+}
+.projectLink{
+    text-decoration: none;
+    color: #1a0dab;
+    font-size: 12px;
+}
+article.projectDescription{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #555;
+}
+
+#education{
+    margin-top: 20px;
+}
+
+.educationHeading{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+table thead th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: #f5f7ff;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table tbody td {
+    padding: 14px 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+section {
+    margin-top: 30px;
+}
+
+section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex !important;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}

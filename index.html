@@ -4,35 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1>Ankush Jaiswal</h1>
-    <p>Shipping bugs faster than code .</p>
-    <img src="./ankush.png" alt="profile image" height="200px" width="200px" />
-    <hr />
-    <a href="https://www.github.com/mrjaiswal122">Github</a>
+  <body style="padding: 10px;">
+    <nav class="flex justify-between mb-4 items-center">
+      <div>
 
+        <h1 class="text-3xl">Ankush Jaiswal</h1>
+        <p>Shipping bugs faster than code .</p>
+      </div>
+      <img src="./ankush.png" alt="profile image" height="50px" width="50px" class="img" />
+    </nav>
     <hr />
-    <section>
-      <article>
-        <h2>
+    <!-- Contact Information -->
+    <div class="flex justify-between ">
+      <div class="flex items-center">
+
+        
+        <a href="https://www.github.com/mrjaiswal122" class="mr-3">Github</a>|
+        
+        <a href="https://www.linkedin.com/in/mrjaiswal122/" class="mx-3">Linkedin</a>|
+        <a href="https://www.twitter.com/mrjaiswal122" class="mx-3">Twitter</a>
+      </div>
+      <div>
+        <a href="mailto:obviouslyankush@gmail.com" class="mx-3">obviouslyankush@gmail.com</a>|
+        <a href="tel:+918840032267" class="ml-3">+918840032267</a>
+      </div>
+    </div>
+    <hr />
+    <!-- Skills Section -->
+     <section>
+      <h1 class="text-3xl ">Skills</h1>
+      <ul class="skillsList">
+        <li class="skillItem">HTML</li>
+        <li class="skillItem">CSS</li>
+        <li class="skillItem">JavaScript</li>
+        <li class="skillItem">ReactJS</li>
+        <li class="skillItem">NodeJS</li>
+        <li class="skillItem">ExpressJS</li>
+        <li class="skillItem">MongoDB</li>
+        <li class="skillItem">Git</li>
+        <li class="skillItem">TailwindCSS</li>
+      </ul>
+     </section>
+    <section id="projects">
+      <h1 class="text-3xl ">Projects</h1>
+      <article class="project bold-2xl">
+        <h2 class="projectHeading">
           Dossiers |
-          <a href="https://github.com/mrjaiswal122/Dossier">Github</a>
+          <a href="https://github.com/mrjaiswal122/Dossier" class="projectLink">Github</a>
         </h2>
-        <p>Building portfolios in minutes without coding.</p>
+        <p class="projectDescription">Building portfolios in minutes without coding.</p>
       </article>
-      <article>
-        <h2>
+      <article class="project">
+        <h2 class="projectHeading">
           Unizoy UI |
-          <a href="https://github.com/Unizoy/unizoy-ui">Github</a>
+          <a href="https://github.com/Unizoy/unizoy-ui" class="projectLink">Github</a>
         </h2>
-        <p>Gsap Powered Animated React Component LIbrary</p>
+        <p class="projectDescription">Gsap Powered Animated React Component LIbrary</p>
       </article>
     </section>
     <hr />
-    <section>
-      <h1>Education</h1>
-      <table border="1">
+    <section id="education">
+      <h1 class="educationHeading">Education</h1>
+      <table>
         <thead>
           <tr>
             <th>Course</th>
@@ -67,10 +103,10 @@
         </tbody>
       </table>
     </section>
-    <hr />
-    <section>
+    <hr class="m-10"/>
+    <section class="w-[500px] mx-auto">
       <h1>Contact me</h1>
-      <form action="">
+      <form action="" style="display: inline; flex-direction: column; ">
         <label for="name"> Name </label>
         <input type="text" id="name" placeholder="Enter your name" />
         <label for="email"> Email </label>
@@ -83,7 +119,7 @@
           <option value="project">Project</option>
           <option value="enquiry">Enquiry</option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit">Submitting</button>
       </form>
     </section>
   </body>
